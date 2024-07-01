@@ -1,4 +1,8 @@
 # Monitor.py
+---
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
+
 
 Monitor.py is a Python script designed to monitor system resource utilization, including CPU and memory usage. Optionally, it can also display GPU information if a GPU is available. This script utilizes the `psutil` and `GPUtil` libraries to collect and display system resource data.
 
