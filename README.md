@@ -14,12 +14,44 @@ Monitor.py is a Python script designed to monitor system resource utilization, i
 
 ## Prerequisites
 
-Before running the script, make sure you have the required Python libraries installed:
+- Python 3.6 or higher
+- Required packages specified in [requirements.txt](requirements.txt)
 
-- `psutil`: Used to collect CPU and memory usage information.
-- `GPUtil`: Used to check for the presence of GPUs and collect GPU-related information. (Only required if you want to monitor GPUs)
+## Installation
 
-You can install these libraries using pip:
+1. Clone the repository or download the script
+2. Set up a virtual environment (recommended):
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # Linux/macOS
+   # venv\Scripts\activate  # Windows
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+## Usage
+
+Basic execution:
 ```bash
+python3 monitor.py
+```
+
+Optional arguments:
+- `--interval`: Refresh interval in seconds (default: 1)
+- `--gpu`: Enable GPU monitoring (requires compatible hardware)
+
+Example with custom settings:
+```bash
+python3 monitor.py --interval 2 --gpu
+```
+
+Press `Ctrl+C` to exit the monitoring process.
+
+## Monitoring Features
+
+- Monitors CPU usage
+- Monitors memory usage
+- Optionally monitors GPU usage and GPU memory usage if availablebash
 pip install psutil GPUtil
