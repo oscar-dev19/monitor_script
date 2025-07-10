@@ -41,6 +41,7 @@ python3 monitor.py
 Optional arguments:
 - `--interval`: Refresh interval in seconds (default: 1)
 - `--gpu`: Enable GPU monitoring (requires compatible hardware)
+- `--log`: logs all stats to stats.log
 
 Example with custom settings:
 ```bash
